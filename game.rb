@@ -32,12 +32,14 @@ class Game
 
   def new_turn
     turn = Turn.new
+
     print "Player#{@current_player}: "
     puts turn.print_question
+
     print "> "
     guess = turn.get_guess
-    print "Player#{@current_player}: "
 
+    print "Player#{@current_player}: "
     if turn.check_solution(guess) == true
       puts "YES! You are correct!"
     else
