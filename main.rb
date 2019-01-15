@@ -24,5 +24,7 @@ puts question.solution
 
 turn = Turn.new
 
+guess = turn.get_guess
+
 puts turn.print_question
-puts turn.check_solution(14)
+puts turn.check_solution(guess)
