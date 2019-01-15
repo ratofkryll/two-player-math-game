@@ -1,9 +1,9 @@
 class Player
-  attr_reader :number
+  attr_reader :id
   attr_accessor :score
 
-  def initialize(number)
-    @number = number
+  def initialize(id)
+    @id = id
     @score = 3
   end
 end

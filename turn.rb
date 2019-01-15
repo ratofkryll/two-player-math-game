@@ -14,6 +14,6 @@ class Turn
   end
 
   def check_solution(guess)
-    guess.to_i == @question.solution.to_i ? "YES! You are correct!" : "Seriously? No."
+    guess.to_i == @question.solution.to_i ? true : false
   end
 end
